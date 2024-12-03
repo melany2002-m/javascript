@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="miscript.js"></script>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <div id="cabecera">
+        <h1> Javascript</h1>
+    </div>
+    
+    <div id="menu-pagina5" class="menu">
+        <a href="index.html" class="item_menu">Inicio</a>
+        <a href="eventos.html" class="item_menu">eventos</a>
+        <a href="css.html" class="item_menu">css</a>
+        <a href="from.html" class="item_menu">form</a>
+        <a href="funciones.html" class="item_menu">funciones</a>
+        <a href="location.html" class="item_menu">location</a>
+        <a href="window.html" class="item_menu">windows</a>
+        <a href="DOM.html" class="item_menu">DOM</a>
+    </div>
+    <h2 id="h2"> funciones</h2>
+    Número 1: <input type="text" id="n1"><br><br>
+    Número 2: <input type="text" id="n2"><br><br>
+    Número 3: <input type="text" id="n3"><br><br>
+
+    Total: <input type="text" id="total" readonly><br><br>
+
+    <input type="button" id="sumar" value="Sumar" onclick="sumar()">
+
+    <script>
+        function sumar() {
+            // Obtener los valores de los inputs y convertirlos a números
+            var n1 = parseInt(document.getElementById("n1").value) || 0;
+            var n2 = parseInt(document.getElementById("n2").value) || 0;
+            var n3 = parseInt(document.getElementById("n3").value) || 0;
+
+            // Realizar la suma
+            var suma = n1 + n2 + n3;
+
+            // Mostrar el resultado en el campo "total"
+            document.getElementById("total").value = suma;
+        }
+    </script>
+</body>
+</html>

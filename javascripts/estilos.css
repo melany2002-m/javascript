@@ -1,0 +1,85 @@
+#cabecera{
+    background-color: #EEEEEE;
+    padding: 10px;
+    color: #539cdc;
+}
+#menu{
+    background-color: #b733b5;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#menu-pagina1 {
+    background-color: #b733b5;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#menu-pagina2 {
+    background-color: #337ab7;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#menu-pagina3 {
+    background-color: #33b7aa;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#menu-pagina4 {
+    background-color: #9370DB;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#menu-pagina5 {
+    background-color: #6495ED;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#menu-pagina6 {
+    background-color: #DB7093;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#menu-pagina7 {
+    background-color: #66CDAA;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#menu-pagina8 {
+    background-color: #D2691E;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+a.item_menu{
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#menu-pagina1 .item_menu:hover{
+    background-color: #dc53d1;
+}
+#menu-pagina2 .item_menu:hover {
+    background-color: #539cdc; 
+}
+#menu-pagina3 .item_menu:hover {
+    background-color: #53dcdc; 
+}
+#menu-pagina4 .item_menu:hover {
+    background-color: #8A2BE2; 
+}
+#menu-pagina5 .item_menu:hover {
+    background-color: #4169E1; 
+}
+#menu-pagina6 .item_menu:hover {
+    background-color: #C71585; 
+}
+#menu-pagina7 .item_menu:hover {
+    background-color: #20B2AA; 
+}
+#menu-pagina8 .item_menu:hover {
+    background-color: #A0522D; 
+}
+
+

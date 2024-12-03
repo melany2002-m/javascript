@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAS CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="cabecera">
+        <h1> Javascript</h1>
+    </div>
+    
+    <div id="menu-pagina1" class="menu">
+        <a href="index.html" class="item_menu">Inicio</a>
+        <a href="eventos.html" class="item_menu">eventos</a>
+        <a href="css.html" class="item_menu">css</a>
+        <a href="from.html" class="item_menu">form</a>
+        <a href="funciones.html" class="item_menu">funciones</a>
+        <a href="location.html" class="item_menu">location</a>
+        <a href="window.html" class="item_menu">windows</a>
+        <a href="DOM.html" class="item_menu">DOM</a>
+    </div>
+   
+    <h2>Conceptos de JavaScript</h2>
+
+    <div id="resultado"></div>
+
+    <script>
+        // Definir variable
+        var nombre = "Melany & Genesis";
+        var resultadoDiv = document.getElementById("resultado");
+
+        // Mostrar en consola y en la página
+        console.log("El nombre es: " + nombre);
+        resultadoDiv.innerHTML += "<p>El nombre es: " + nombre + "</p>";
+
+        // Cambiar valor de la variable
+        nombre = 7;
+        console.log("El nombre es: " + nombre);
+        resultadoDiv.innerHTML += "<p>El nombre es: " + nombre + "</p>";
+
+        // Comparar dos números
+        var n1 = 10;
+        var n2 = 7;
+
+        if (n1 > n2) { 
+            console.log(n1 + " es mayor que " + n2);
+            resultadoDiv.innerHTML += "<p>" + n1 + " es mayor que " + n2 + "</p>";
+        } else {
+            console.log(n2 + " es mayor o igual que " + n1);
+            resultadoDiv.innerHTML += "<p>" + n2 + " es mayor o igual que " + n1 + "</p>";
+        }
+
+        // Ciclo for para mostrar números del 1 al 10
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+            resultadoDiv.innerHTML += "<p>" + i + "</p>";
+        }
+    </script>
+</body>
+</html>

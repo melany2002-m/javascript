@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAS CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="cabecera">
+        <h1> Javascript</h1>
+    </div>
+    
+    <div id="menu-pagina4" class="menu">
+        <a href="index.html" class="item_menu">Inicio</a>
+        <a href="eventos.html" class="item_menu">eventos</a>
+        <a href="css.html" class="item_menu">css</a>
+        <a href="from.html" class="item_menu">form</a>
+        <a href="funciones.html" class="item_menu">funciones</a>
+        <a href="location.html" class="item_menu">location</a>
+        <a href="window.html" class="item_menu">windows</a>
+        <a href="DOM.html" class="item_menu">DOM</a>
+    </div>
+   
+    <style>
+        #imagenDiv {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="opciones">Seleccione:</label>
+    <select id="opciones">
+        <option value="" selected disabled>Elige una opción</option>
+        <option value="carro">Carro</option>
+        <option value="moto">Moto</option>
+        <option value="bicicleta">Bicicleta</option>
+    </select>
+
+    <!-- Div para mostrar la imagen -->
+    <div id="imagenDiv">Selecciona una opción</div>
+
+    <script>
+        // Función para mostrar la imagen seleccionada
+        document.getElementById("opciones").addEventListener("change", function () {
+            const seleccion = this.value; // Obtener el valor seleccionado
+            const div = document.getElementById("imagenDiv"); // Div donde se mostrará la imagen
+
+            // Limpiar el contenido actual del div
+            div.innerHTML = "";
+
+            // Mostrar la imagen según la opción seleccionada
+            if (seleccion === "carro") {
+                div.innerHTML = '<img src="carro.jpg" alt="Carro">';
+            } else if (seleccion === "moto") {
+                div.innerHTML = '<img src="moto.jpg" alt="Moto">';
+            } else if (seleccion === "bicicleta") {
+                div.innerHTML = '<img src="bicicleta.jpeg" alt="Bicicleta">';
+            } else {
+                div.textContent = "Opción no válida";
+            }
+        });
+    </script>
+</body>
+</html>
